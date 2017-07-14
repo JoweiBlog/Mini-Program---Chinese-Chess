@@ -1,0 +1,51 @@
+<view class="game-page">
+
+  <block wx:if="{{players.length < 2}}">
+    <view class="box-wait-pane">
+      <view class="box-wait-text">等待对手..</view>
+      <image src="../../sources/images/box-wait-bg.png" class="box-wait-bg" mode="aspectFit"></image>
+    </view>
+  </block>
+
+  <view class="game-box">
+
+    <block wx:if="{{players.length >= 2}}">
+      <view class="game-player gp-top">
+        <image src="{{player.role === 1 ? players[1].avatar : players[0].avatar}}"
+               class="game-player-avatar"></image>
+        <view class="game-player-name">
+        {{player.role === 1 ? players[1].name : players[0].name}}
+        </view>
+        <block wx:if="{{(STATUS.gameStatus === 1 || STATUS.gameStatus === 2) && STATUS.turnRole === (player.role === 1 ? players[1].role : players[0].role)}}">
+          <view class="game-tips">执棋中..</view>
+        </block>
+      </view>
+    </block>
+
+    <block wx:if="{{players.length >=2}}">
+      <view class="game-canvas">
+        <canvas class="qp-canvas" disable-scroll="true" canvas-id="qp" style="width: {{OPS.qpw}}px; height: {{OPS.qph}}px;" bindtouchstart="boxTap"/>
+      </view>
+    </block>
+
+    <view class="game-player gp-bt">
+      <image src="{{player.avatar}}" class="game-player-avatar"></image>
+      <block wx:if="{{players.length >=2}}">
+        <view class="game-player-name">{{player.name}}</view>
+      </block>
+      <block wx:if="{{(players.length >= 2 && STATUS.gameStatus === 1 || STATUS.gameStatus === 2) && STATUS.turnRole === player.role}}">
+        <view class="game-tips">执棋中..</view>
+      </block>
+      <block wx:if="{{STATUS.gameStatus === -2 && player.role === 1 && players.length >= 2}}">
+        <button bindtap="startGame" class="restart-btn" type="default" size="mini">再来一局</button>
+      </block>
+    </view>
+
+  </view>
+
+  <block wx:if="{{players.length < 2}}">
+    <button open-type="share" size="mini" plain="true" class="invite-btn">邀请好友来战</button>
+  </block>
+
+  <image class="gc-bg" src="../../sources/images/gc-bg.png" mode="scaleToFill"></image>
+</view>

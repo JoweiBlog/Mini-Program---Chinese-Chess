@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="rule-link">
+    <navigator url="/pages/desc/desc">规则及声明</navigator>
+  </view>
+
+  <view class="copyright">@joweiblog</view>
+
+  <image class="index-bg" src="../../sources/images/bg.jpg" mode="scaleToFill"></image>
+
+  <view class="create-room-btn">
+    <image bindtap="createRoom"  class="play-btn" src="../../sources/images/play-btn.png" mode="aspectFit"></image>
+  </view>
+</view>

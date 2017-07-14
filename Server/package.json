@@ -1,0 +1,18 @@
+{
+  "name": "wss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wss"
+  ],
+  "author": "jowei",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "ws": "^3.0.0"
+  }
+}

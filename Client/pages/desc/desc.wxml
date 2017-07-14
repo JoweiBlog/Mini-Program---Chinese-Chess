@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="desc-pane">
+    <view class="title">规则及声明</view>
+    <view class="desc-box">
+      <view class="desc">1. 目前游戏仅支持邀请好友开局，暂未开发对战象棋AI。(T T 没空啊。。)</view>
+      <view class="desc">2. 若在主游戏界面返回到游戏首页，会默认退出当前回合游戏。（额，其实目前微信小程序不适合游戏啦。。另外微信只允许维持单个socket哈哈哈）</view>
+      <view class="desc">3. 游戏中若涉及到图片资源版本问题，请及时联系更新。（毕竟不是专业UI哈哈哈哈哈）</view>
+      <view class="desc">4. 非商，旨在娱乐</view>
+      <view class="desc">5. 联系方式：joweiblog@163.com </view>
+    </view>
+  </view>
+</view>

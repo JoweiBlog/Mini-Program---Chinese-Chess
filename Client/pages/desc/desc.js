@@ -1,0 +1,4 @@
+// desc.js
+Page({
+  data: {},
+});

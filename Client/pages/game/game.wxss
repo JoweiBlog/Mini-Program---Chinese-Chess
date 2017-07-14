@@ -1,0 +1,154 @@
+.game-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.gp-top .game-tips {
+  left: 0;
+}
+
+.gp-bt .game-tips {
+  right: 0;
+}
+
+.game-tips {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10rpx;
+  text-align: center;
+  background-color: #1c9574;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 8rpx;
+}
+
+.restart-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 2;
+}
+
+.gc-bg {
+  position: absolute;
+  height: 235rpx;
+  bottom: 0;
+  width: 100%;
+}
+
+.game-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.qp-canvas {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /*background: #f3f3f3;*/
+}
+
+.game-canvas {
+  position:relative;
+  background-color:#fcfcfc;
+  box-shadow:0 6rpx 10rpx rgba(0,0,0,.2);
+  border-radius:8rpx;
+  border:1px solid #fff;
+  padding: 16rpx;
+}
+
+.game-player {
+  position: relative;
+  padding: 10rpx;
+}
+
+.game-player.gp-top {
+  text-align: right;
+}
+
+.game-player.gp-top .game-player-avatar {
+  float: right;
+}
+
+.game-player.gp-top .game-player-name {
+  padding-right: 140rpx;
+}
+
+.game-player.gp-bt .game-player-name {
+  padding-left: 140rpx;
+}
+
+.game-player.gp-bt {
+  text-align: left;
+}
+
+.game-player.gp-bt .game-player-avatar {
+  float: left;
+}
+
+.game-player-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.game-player-name {
+  line-height: 100rpx;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+  color: #444;
+}
+
+.game-vs {
+  position: relative;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  color: #bbb;
+}
+
+.box-wait-pane {
+  position: relative;
+}
+
+.box-wait-bg {
+  display: block;
+  margin: 0 auto;
+  width: 700rpx;
+  height:250rpx;
+  padding-top:200rpx;
+}
+
+.box-wait-text {
+  position:absolute;
+  bottom:280rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+  text-align:center;
+  font-size:26rpx;
+  color:#888;
+
+}
+
+.invite-btn {
+  position: absolute;
+  bottom: 100rpx;
+  width: 400rpx;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
