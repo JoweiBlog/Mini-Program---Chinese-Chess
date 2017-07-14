@@ -9,4 +9,4 @@ Deploy server and client code.
 
 # Tip
 1. The code is for reference only.
-2. The WSS server 'wss://xq.joweiblog.top' is not available. Build your own WSS server.
+2. The Ws server 'wss://xq.joweiblog.top' is not available. Build your own Ws server.
